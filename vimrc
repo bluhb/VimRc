@@ -45,6 +45,7 @@ Plugin 'endel/vim-github-colorscheme'
 Plugin 'fneu/breezy'
 Plugin 'jnurmine/Zenburn'
 Plugin 'ayu-theme/ayu-vim'
+Plugin 'turbio/bracey.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -261,3 +262,9 @@ autocmd BufEnter * silent! lcd %:p:h "https://vim.fandom.com/wiki/Set_working_di
 set shellcmdflag=-ic "https://stackoverflow.com/questions/4642822/commands-executed-from-vim-are-not-recognizing-bash-command-aliases
 
 let g:minimap_toggle='<S-m>'
+
+"option for bracey(live html/css/js preview)"
+let g:bracey_server_allow_remote_connections=1
+
+"let vim work with tmux
+"set term=screen-256color
